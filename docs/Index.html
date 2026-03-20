@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Moon | Sobrevive a lo Imposible</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=VT323&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="video-background">
+        <source src="videos/Intro_mejorado.mp4" type="video/mp4">
+    </video>
+    <div class="overlay-bg"></div>
+    <div class="scanlines"></div>
+
+    <header class="main-header">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio">Cima</a></li>
+                <li><a href="#caracteristicas">El Reto</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="torch-container torch-left">
+                <div class="pixel-fire"></div>
+                <div class="medieval-bracket"></div>
+            </div>
+
+            <div class="content-box">
+                <h1>RED MOON</h1>
+                <p>La oscuridad se acerca. Prepara tu espada y defiende el reino.</p>
+                
+                <button id="btn-main" class="btn-pixel">JUGAR AHORA</button>
+
+                <div id="menu-opciones">
+                    <a href="https://alexantonio29.github.io/phaserEscuela/" target="_blank" class="btn-pixel btn-small">🌐 JUGAR EN WEB</a>
+                    <a href="https://store.steampowered.com" target="_blank" class="btn-pixel btn-small btn-steam">
+                        <img src="imagenes/Steam.png" alt="Steam" class="steam-icon"> 
+                        <span>IR A STEAM</span>
+                    </a>
+                    <a href="descarga/juego.zip" download class="btn-pixel btn-small btn-download">💾 DESCARGAR</a>
+                    <span id="btn-return" class="btn-return">[ REGRESAR ]</span>
+                </div>
+            </div>
+
+            <div class="torch-container torch-right">
+                <div class="pixel-fire"></div>
+                <div class="medieval-bracket"></div>
+            </div>
+        </section>
+
+        <section class="content-section" id="caracteristicas">
+            <h2>Por qué vas a sufrir</h2>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <h3>Recursos Escasos</h3>
+                    <p>Cada poción cuenta. La magia no abunda y los enemigos no perdonan. Administra tu inventario o perece.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>IA Implacable</h3>
+                    <p>Las criaturas de la noche aprenden de tus movimientos. No hay refugio seguro bajo la luna roja.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Muerte Punitiva</h3>
+                    <p>Caer en batalla tiene un precio muy alto. Domina el combate o prepárate para perderlo todo.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-section" id="contacto">
+            <h2>Transmisión de Emergencia</h2>
+            <form id="contact-form">
+                <input type="text" id="nombre" placeholder="Tu nombre, guerrero" required>
+                <input type="email" id="correo" placeholder="Tu señal (Correo)" required>
+                <textarea id="mensaje" placeholder="Reporta un bug o deja tus últimas palabras..." required></textarea>
+                <button type="submit" class="btn-pixel btn-submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Red Moon. Desarrollado con sangre, sudor y código.</p>
+    </footer>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
